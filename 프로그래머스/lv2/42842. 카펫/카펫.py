@@ -1,8 +1,8 @@
 def solution(brown, yellow):
     answer = []
     area = brown+yellow
-    curX,curY = area,1
-    
+    curX,curY = area-1,2
+
     while(1):
         if not area / curX:
             continue
