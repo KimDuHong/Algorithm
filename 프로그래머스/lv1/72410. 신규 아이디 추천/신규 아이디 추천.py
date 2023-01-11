@@ -1,6 +1,5 @@
 def step1(id):
-    id = id.lower()
-    return id
+    return id.lower()
 
 def step2(id):
     tmp = ""
