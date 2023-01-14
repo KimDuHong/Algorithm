@@ -1,3 +1,3 @@
-def solution(numbers):
-    return 45-sum(numbers)
+def solution(n):
+    return 45-sum(n)
             
