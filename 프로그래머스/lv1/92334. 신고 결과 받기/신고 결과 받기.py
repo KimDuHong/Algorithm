@@ -4,6 +4,7 @@ def solution(id_list, report, k):
     report = list(set(report))
     for i in report:
         id_report[i.split()[1]].append(i.split()[0])
+        
     for item in id_report.values():
         if len(item) >= k:
             for j in item:
