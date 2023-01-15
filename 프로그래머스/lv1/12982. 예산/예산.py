@@ -1,11 +1,6 @@
 def solution(d, budget):
-    sums = 0
-    count = 0
+    s = sum(d)
     d.sort()
-    for i in d:
-        sums += i
-        if sums <= budget:
-            count += 1
-        else:
-            break
-    return count
+    while(s>budget):
+        s -= d.pop()
+    return len(d)
