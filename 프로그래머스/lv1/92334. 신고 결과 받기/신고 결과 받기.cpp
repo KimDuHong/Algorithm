@@ -26,6 +26,9 @@ vector<int> solution(vector<string> id_list, vector<string> report, int k) {
                count ++;
                i++;
            }
+           else{
+               break;
+           }
        }
         if (count >= k) {
             index.push_back(i);
