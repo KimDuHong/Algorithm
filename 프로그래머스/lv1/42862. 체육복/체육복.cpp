@@ -11,17 +11,17 @@ int solution(int n, vector<int> lost, vector<int> reserve) {
     sort(reserve.begin(), reserve.end());
     if ( answer != n){
         for ( int i = 0; i < lost.size(); i++){
-     for ( int k = 0; k < reserve.size(); k++){
+            for ( int k = 0; k < reserve.size(); k++){
         
-          if (reserve[k] == lost[i]){
-              answer++;
-              lost.erase(lost.begin()+i);
-                i--;
-                reserve.erase(reserve.begin()+k);
-                k--;
-          }  
-        }
-    }
+                  if (reserve[k] == lost[i]){
+                      answer++;
+                      lost.erase(lost.begin()+i);
+                        i--;
+                        reserve.erase(reserve.begin()+k);
+                        k--;
+                  }  
+                }
+            }
         for ( int i = 0; i < lost.size(); i++){
         for ( int k = 0; k < reserve.size(); k++){
             if ( reserve[k] - lost[i] == -1 ){
