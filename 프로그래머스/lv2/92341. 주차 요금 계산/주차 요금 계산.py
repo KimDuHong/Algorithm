@@ -6,8 +6,7 @@ def money(fees,time):
         if (time[num] <= fees[0]):
             result.append(fees[1])
         else:
-            tmp = fees[1] + math.ceil((time[num]-fees[0]) / fees[2]) * fees[3]
-            result.append(tmp)
+            result.append(fees[1] + math.ceil((time[num]-fees[0]) / fees[2]) * fees[3])
     return result
 def time_count(intime,outtime):
     intime_min = int(intime[:2]) * 60 + int(intime[3:])
