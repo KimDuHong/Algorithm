@@ -1,6 +1,6 @@
 from collections import defaultdict
 import sys
-sys.setrecursionlimit(10000000)
+sys.setrecursionlimit(100000)
 
 def solution(k, room_number):
     answer = []
