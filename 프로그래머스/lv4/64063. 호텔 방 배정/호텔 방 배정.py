@@ -14,6 +14,7 @@ def solution(k, room_number):
     
     for i in room_number:
         n = find_room(i)
+        m[i] = n
         answer.append(n)
         m[n] = n+1
     return answer
