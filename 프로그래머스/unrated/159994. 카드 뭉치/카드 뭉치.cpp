@@ -37,8 +37,8 @@ string solution(vector<string> cards1, vector<string> cards2, vector<string> goa
         }
     }
 
-    if(isSuccess) answer += "Yes";
-    else answer += "No";
+    if(isSuccess) answer = "Yes";
+    else answer = "No";
 
     return answer;
 }
